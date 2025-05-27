@@ -47,21 +47,21 @@ public class MouseListener {
             }
         }
     }
-        public static void mouseScrollCallback(long window, double xOffset, double yOffset) {
+    public static void mouseScrollCallback(long window, double xOffset, double yOffset) {
         get().scrollX = xOffset;
         get().scrollY = yOffset;
-        }
+    }
 
-        public static void endFrame() {
-            get().scrollX = 0;
-            get().scrollY = 0;
-            get().lastX = get().xPos;
-            get().lastY = get().yPos;
-        }
+    public static void endFrame() {
+        get().scrollX = 0;
+        get().scrollY = 0;
+        get().lastX = get().xPos;
+        get().lastY = get().yPos;
+    }
 
-        public static float getX() {
+    public static float getX() {
         return (float)get().xPos ;
-        }
+    }
     public static float getY() {
         return (float)get().yPos;
     }
